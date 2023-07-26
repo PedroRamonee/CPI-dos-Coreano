@@ -1,0 +1,145 @@
+body {
+
+    background-color: black;
+}
+
+img {
+    width: 170px;
+    height: 155px;
+
+}
+
+h1 {
+    color: purple;
+    font-family: "Pacifico", cursive;
+}
+
+p {
+    font-size: 20pt;
+    font-family: "Pacifico", cursive;
+    padding: 10px;
+}
+
+
+.linha {
+
+    display: flex;
+
+}
+
+.text {
+    font-size: 20pt;
+    font-family: "Pacifico", cursive;
+    color: white;
+}
+
+.box {
+
+    font-size: 20pt;
+    font-family: "Pacifico", cursive;
+    background-color: gray;
+    color: white;
+    margin-left: 4%;
+    margin-right: 5%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0 4px 10px 10px rgba(107, 107, 107, 0.8);
+    cursor: pointer;
+}
+
+.overlay {
+    visibility: hidden;
+    position: fixed;
+    height: 55vh;
+    max-width: 60em;
+    width: 40vw;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    background-color: gray;
+    border: 1rem solid #f2f2f2;
+    border-radius: 2rem;
+}
+
+.overlay .close {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -2rem;
+    right: -2rem;
+    color: white;
+    background-color: black;
+    border: 0.35rem solid white;
+    border-radius: 50px;
+    height: 4.5rem;
+    width: 4.5rem;
+    cursor: pointer;
+}
+
+.overlay .close:hover {
+    transform: scale(1.05);
+}
+
+.overlay .form .box {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem 1rem 4rem;
+    font-size: 2rem;
+    color: white;
+    align-items: center;
+}
+
+.fade-in {
+    animation: fade-in 0.4s ease-in-out forwards;
+}
+
+.fade-out {
+    animation: fade-out 0.4s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    from {
+        visibility: hidden;
+        transform: scale(0) translate(-50%, -50%);
+        opacity: 0;
+    }
+
+    1% {
+        visibility: visible;
+    }
+
+    to {
+        visibility: visible;
+        transform: scale(1) translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        visibility: visible;
+        transform: scale(1) translate(-50%, -50%);
+        opacity: 1;
+    }
+
+    99% {
+        visibility: hidden;
+    }
+
+    to {
+        visibility: hidden;
+        transform: scale(0) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
