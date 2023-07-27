@@ -599,7 +599,7 @@ function changeText(name) {
     }
     else if (nome.innerText == 'Lactea') {
 
-        a[0].innerHTML = 'Pain 2014 (não existia divisão em splits)'
+        a[0].innerHTML = 'Pain 2014'
         a[1].innerHTML = 'Team One 2018-1'
         a[2].innerHTML = ''
         if (name.style.backgroundColor != "orange") {
@@ -651,7 +651,7 @@ function changeText(name) {
     }
     else if (nome.innerText == 'Winged') {
 
-        a[0].innerHTML = 'Keyd Stars 2014 (não existia divisão em splits)'
+        a[0].innerHTML = 'Keyd Stars 2014'
         a[1].innerHTML = 'RED Canids 2018-1'
         a[2].innerHTML = ''
         if (name.style.backgroundColor != "red") {
@@ -666,7 +666,7 @@ function changeText(name) {
     }
     else if (nome.innerText == 'Suno') {
 
-        a[0].innerHTML = 'Keyd Stars 2014 (não existia divisão em splits)'
+        a[0].innerHTML = 'Keyd Stars 2014'
 
         if (name.style.backgroundColor != "purlple") {
             name.style.backgroundColor = "purple"
@@ -684,7 +684,7 @@ function changeText(name) {
     }
     else if (nome.innerText == 'Olleh') {
 
-        a[0].innerHTML = 'Pain 2014 (não existia divisão em splits)'
+        a[0].innerHTML = 'Pain 2014'
 
         if (name.style.backgroundColor != "black") {
             name.style.backgroundColor = "black"
